@@ -54,4 +54,37 @@ START
 FIN
 ------
 
+## mention (note)
+
+----- text--
+    VARABLE
+    note : number
+
+INIT
+START
+    DEBUT FONCTION mention () :
+        note <= 0
+        SI (note >= 16) ALORS
+            RETOURNE "Très bien"
+        FIN SI
+
+        SI (note >= 14 && < 16) ALORS
+            RETOURNE "Bien"
+        FIN SI
+
+        SI (note >= 12 && < 14) ALORS
+            RETOURNE "Assez bien"
+        FIN SI
+
+        SI (note >= 10) ALORS
+            RETOURNE "Passable"
+        FIN SI
+            
+            RETOURNE "insuffisant"    
+        
+        
+    FIN FONCTION        
+FIN
+------
+
 

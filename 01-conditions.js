@@ -59,6 +59,19 @@ export const max = (a, b) => {
  */
 export const mention = (note) => {
   // à compléter
+
+  if (note >= 16) {
+    return ("Très bien")
+  } else if (note > 13 && note < 16) {
+    return ("Bien")
+  } else if (note > 11 && note < 14) {
+    return ("Assez bien")
+  } else if (note >= 10 && note < 12) {
+    return ("Passable")
+  } else {
+    return ("Insuffisant")
+
+  }      
 }
 
 /**
