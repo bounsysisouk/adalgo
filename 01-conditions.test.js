@@ -19,6 +19,12 @@ describe("estPositif", () => {
 // Cas à couvrir : un nombre pair, un nombre impair, zéro.
 describe("estPair", () => {
   // à compléter
+  it("retourne vrai pour un nombre paire", () => {
+    expect(estPair(4)).toBe(true)
+  })
+  it("retourne vrai pour un nombre paire", () => {
+    expect(estPair(7)).toBe(false)
+  })
 })
 
 // Nouveau pattern : deux paramètres, cas d'égalité.

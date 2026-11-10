@@ -9,7 +9,11 @@
  * @example estPositif(5) → true / estPositif(-3) → false
  */
 export const estPositif = (n) => {
-  // à compléter
+  // à compléter ok//
+  if (n >= 0)
+    return true
+  else
+    return false
 }
 
 /**
@@ -19,7 +23,11 @@ export const estPositif = (n) => {
  * @example estPair(4) → true / estPair(7) → false
  */
 export const estPair = (n) => {
-  // à compléter
+  // à compléter ok//
+  if (n % 2 == 0)
+    return true
+  else
+    return false
 }
 
 /**
@@ -30,8 +38,16 @@ export const estPair = (n) => {
  * @example max(3, 7) → 7
  */
 export const max = (a, b) => {
-  // à compléter
-}
+  // à compléter ok//
+   let nbMax = 0
+  if (a > b) {
+    nbMax = a
+  } else {
+    nbMax = b
+  }
+  return nbMax
+}  
+
 
 /**
  * Retourne la mention correspondant à la note.
