@@ -41,6 +41,7 @@ FIN
     max : number
 
 INIT
+
 START
     DEBUT FONCTION estMax (a, b) :
         max <= 0
@@ -61,6 +62,7 @@ FIN
     note : number
 
 INIT
+    lire note
 START
     DEBUT FONCTION mention () :
         note <= 0
@@ -79,7 +81,7 @@ START
         SI (note >= 10) ALORS
             RETOURNE "Passable"
         FIN SI
-            
+
             RETOURNE "insuffisant"    
         
         

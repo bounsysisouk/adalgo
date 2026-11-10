@@ -12,6 +12,12 @@ describe("compterJusqua", () => {
 // Cas à couvrir : s'exécute sans erreur pour n=8, s'exécute sans erreur pour n=0.
 describe("afficherPairs", () => {
   // à compléter
+  it ("s'exécute sans erreur pour n=8", () => {
+    expect(() => afficherPairs(8)).not.toThrow()
+  })
+  it("s'exécute sans erreur pour n=0", () => {
+    expect(() => afficherPairs(0)).not.toThrow()
+  })
 })
 
 // Pattern 2 : boucle + accumulateur numérique → .toBe() sur un nombre.
@@ -32,6 +38,15 @@ describe("somme", () => {
 // Cas à couvrir : produit(5) → 120, produit(1) → 1, produit(0) → 1.
 describe("produit", () => {
   // à compléter
+  it("Retourne le produit de tous les entiers de 1 à n", () => {
+      expect(produit(5)).toBe(120)
+  })
+  it("Retourne le produit de tous les entiers de 1 à n", () => {
+      expect(produit(1)).toBe(1)
+  }) 
+  it( "Retourne le produit de tous les entiers de 1 à n", () => {
+      expect(produit(0)).toBe(1)
+  })   
 })
 
 // Même pattern que somme — à toi.
