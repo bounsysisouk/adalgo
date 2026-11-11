@@ -9,7 +9,14 @@
  * @example maximum([3, 7, 2, 9, 1]) → 9
  */
 export const maximum = (tableau) => {
-  // à compléter
+  // à compléter //
+  let max = tableau[0]
+  tableau.forEach((n) => {
+    if (n > max) {
+      max = n 
+    }
+  })
+  return max
 }
 
 /**
