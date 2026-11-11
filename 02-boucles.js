@@ -100,7 +100,7 @@ export const compterPairs = (n) => {
  * @example table(0) → []
  */
 export const table = (n) => {
-  // à compléter // 
+  // à compléter // OK //
   let compteur = 1
   let tab = [] 
   let nbMultiple = 0
@@ -124,7 +124,16 @@ export const table = (n) => {
  * @example multiplesJusqua(7, 20) → [7, 14]
  */
 export const multiplesJusqua = (n, limite) => {
-  // à compléter
+  // à compléter // OK //
+  let compteur = n
+  let i = 0
+  let tab = []
+  while (compteur <= limite) {
+    tab[i] = compteur
+    i = i + 1
+    compteur = compteur + n
+  }
+  return tab
 }
 
 /**

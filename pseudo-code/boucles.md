@@ -127,7 +127,7 @@ START
     DEBUT FONCTION table (n) :
 
     TANT QUE compteur <= n 
-        SI (compteur % 3 = 0) FAIRE 
+        SI (compteur % n = 0) FAIRE 
             tab[i] <- compteur  
             i = i + 1 
             
@@ -138,3 +138,30 @@ START
     FIN FONCTION        
 FIN
 ------
+
+## multiplesJusqua(n, limite)
+
+----- text--
+    VARIABLE
+    n : number
+    i : ENTIER
+    limite : ENTIER
+INIT
+    tab = []
+    i = 0
+    compteur = n    
+START
+    DEBUT FONCTION multiplierJusqua (n, limite) :
+
+    TANT QUE compteur <= limite FAIRE 
+    
+            tab[i] <- compteur  
+            i = i + 1
+            compteur = compteur + n
+            
+    FIN TANT QUE
+        RETOURNE tab
+    FIN FONCTION        
+FIN
+------
+

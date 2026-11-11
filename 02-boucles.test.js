@@ -82,7 +82,13 @@ describe("table", () => {
 // Même pattern que table — à toi.
 // Cas à couvrir : multiplesJusqua(3, 12) → [3, 6, 9, 12], multiplesJusqua(7, 20) → [7, 14].
 describe("multiplesJusqua", () => {
-  // à compléter
+  // à compléter // 
+  it("Retourne un tableau contenant tous les multiples de n inférieurs ou égaux à limite", () => {
+    expect(multiplesJusqua(3, 12)).toEqual([3, 6, 9, 12])
+  })
+    it("Retourne un tableau contenant tous les multiples de n inférieurs ou égaux à limite", () => {
+    expect(multiplesJusqua(7, 20)).toEqual([7, 14])
+  })
 })
 
 // [FACULTATIF] Même pattern que somme/produit — à toi.
