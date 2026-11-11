@@ -94,19 +94,47 @@ FIN
     n : number
 INIT
     compteur <- 1
-        
+    nbPaire = 0   
 START
     DEBUT FONCTION compterPair (n) :
 
     TANT QUE compteur <= n 
 
         SI (compteur % 2 = 0) FAIRE
+            nbPairs = nbpairs +1
             AFFICHER compteur     
         FIN SI
             compteur <- compteur + 1
-            
+
     FIN TANT QUE 
+    RETOURNE  
         
+    FIN FONCTION        
+FIN
+------
+
+## tables
+
+----- text--
+    VARIABLE
+    n : number
+    i : ENTIER
+INIT
+    tab = []
+    i = 0
+    compteur = 0    
+START
+    DEBUT FONCTION table (n) :
+
+    TANT QUE compteur <= n 
+        SI (compteur % 3 = 0) FAIRE 
+            tab[i] <- compteur  
+            i = i + 1 
+            
+        FIN SI
+            compteur <- compteur + 1
+    FIN TANT QUE
+        RETOURNE tab
     FIN FONCTION        
 FIN
 ------
