@@ -11,7 +11,7 @@ describe("compterJusqua", () => {
 // Même pattern que compterJusqua — à toi.
 // Cas à couvrir : s'exécute sans erreur pour n=8, s'exécute sans erreur pour n=0.
 describe("afficherPairs", () => {
-  // à compléter
+  // à compléter // OK //
   it ("s'exécute sans erreur pour n=8", () => {
     expect(() => afficherPairs(8)).not.toThrow()
   })
