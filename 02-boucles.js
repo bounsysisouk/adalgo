@@ -79,7 +79,16 @@ export const produit = (n) => {
  * @example compterPairs(7)  → 3
  */
 export const compterPairs = (n) => {
-  // à compléter
+  // à compléter //
+  let compteur = 1
+  let nbPairs = 0
+  while (compteur <= n) {
+    if (compteur % 2 === 0) {
+        nbPairs = nbPairs + 1
+    }
+    compteur = compteur + 1
+  } 
+  return nbPairs
 }
 
 /**

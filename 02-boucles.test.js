@@ -37,7 +37,7 @@ describe("somme", () => {
 // Même pattern que somme — à toi.
 // Cas à couvrir : produit(5) → 120, produit(1) → 1, produit(0) → 1.
 describe("produit", () => {
-  // à compléter
+  // à compléter // OK //
   it("Retourne le produit de tous les entiers de 1 à n", () => {
       expect(produit(5)).toBe(120)
   })
@@ -52,7 +52,17 @@ describe("produit", () => {
 // Même pattern que somme — à toi.
 // Cas à couvrir : compterPairs(10) → 5, compterPairs(7) → 3, compterPairs(1) → 0.
 describe("compterPairs", () => {
-  // à compléter
+  // à compléter // 
+  it("Retourne le nombre d'entiers pairs entre 1 et n inclus", () => {
+    expect(compterPairs(10)).toBe(5)
+  })
+  it("Retourne le nombre d'entiers pairs entre 1 et n inclus", () => {
+    expect(compterPairs(7)).toBe(3)
+  })
+  it("Retourne le nombre d'entiers pairs entre 1 et n inclus", () => {
+      expect(compterPairs(1)).toBe(0)
+  })
+  
 })
 
 // Pattern 3 : boucle + construction de tableau → .toEqual() sur un tableau.

@@ -34,7 +34,8 @@ START
         SI (compteur % 2 = 0) FAIRE
             AFFICHER compteur
             compteur <- compteur + 1
-        FIN TANT QUE 
+        FIN SI
+    FIN TANT QUE 
         
     FIN FONCTION        
 FIN
@@ -62,6 +63,8 @@ START
 FIN FONCTION
 ------
 
+## Produit
+
 ----- text--
     VARIABLE
     n : number
@@ -69,7 +72,7 @@ INIT
     compteur <- 1
     produits <- 1    
 START
-    DEBUT FONCTION AfficherPairs (n) :
+    DEBUT FONCTION produit (n) :
 
     TANT QUE compteur <= n FAIRE
 
@@ -79,6 +82,30 @@ START
         FIN TANT QUE 
          
         RETOURNER produit
+        
+    FIN FONCTION        
+FIN
+------
+
+## CompterPair
+
+----- text--
+    VARIABLE
+    n : number
+INIT
+    compteur <- 1
+        
+START
+    DEBUT FONCTION compterPair (n) :
+
+    TANT QUE compteur <= n 
+
+        SI (compteur % 2 = 0) FAIRE
+            AFFICHER compteur     
+        FIN SI
+            compteur <- compteur + 1
+            
+    FIN TANT QUE 
         
     FIN FONCTION        
 FIN
