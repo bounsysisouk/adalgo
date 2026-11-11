@@ -9,7 +9,7 @@
  * @example maximum([3, 7, 2, 9, 1]) → 9
  */
 export const maximum = (tableau) => {
-  // à compléter //
+  // à compléter // OK //
   let max = tableau[0]
   tableau.forEach((n) => {
     if (n > max) {
@@ -27,7 +27,15 @@ export const maximum = (tableau) => {
  */
 export const minimum = (tableau) => {
   // à compléter
+  let min = tableau[0]
+  tableau.forEach((n) => {
+    if (n < min) {
+      min = n 
+    }
+  })
+  return min
 }
+
 
 /**
  * Retourne la moyenne des valeurs. Retourne null si le tableau est vide.
