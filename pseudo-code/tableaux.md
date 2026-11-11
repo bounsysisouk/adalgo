@@ -67,3 +67,36 @@ START
     FIN FONCTION        
 FIN
 ------
+
+## moyenne (tableaux)
+
+----- text--
+VARIABLE
+    tab : ENTIER[]
+    somme : REEL
+    val : ENTIER
+    moyenne : REEL
+    nbVal : ENTIER
+INIT
+    tab[0] <- 2
+    tab[1] <- 4
+    tab[2] <- 6
+START
+    DEBUT FONCTION moyen(tab) :
+    somme = 0
+    nbval = 0
+        POUR val <- 0 à 2 FAIRE
+            somme <- somme + tab[val] 
+            nbVal <- nbval + 1
+
+        FIN POUR 
+
+        moyenne = somme / nbVal
+
+        RETOURNER moyenne 
+
+        FIN   
+        
+    FIN FONCTION        
+FIN
+------
