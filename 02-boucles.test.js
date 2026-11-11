@@ -12,6 +12,12 @@ describe("compterJusqua", () => {
 // Cas à couvrir : s'exécute sans erreur pour n=8, s'exécute sans erreur pour n=0.
 describe("afficherPairs", () => {
   // à compléter
+  it ("s'exécute sans erreur pour n=8", () => {
+    expect(() => afficherPairs(8)).not.toThrow()
+  })
+  it("s'exécute sans erreur pour n=0", () => {
+    expect(() => afficherPairs(0)).not.toThrow()
+  })
 })
 
 // Pattern 2 : boucle + accumulateur numérique → .toBe() sur un nombre.
@@ -31,13 +37,32 @@ describe("somme", () => {
 // Même pattern que somme — à toi.
 // Cas à couvrir : produit(5) → 120, produit(1) → 1, produit(0) → 1.
 describe("produit", () => {
-  // à compléter
+  // à compléter // OK //
+  it("Retourne le produit de tous les entiers de 1 à n", () => {
+      expect(produit(5)).toBe(120)
+  })
+  it("Retourne le produit de tous les entiers de 1 à n", () => {
+      expect(produit(1)).toBe(1)
+  }) 
+  it( "Retourne le produit de tous les entiers de 1 à n", () => {
+      expect(produit(0)).toBe(1)
+  })   
 })
 
 // Même pattern que somme — à toi.
 // Cas à couvrir : compterPairs(10) → 5, compterPairs(7) → 3, compterPairs(1) → 0.
 describe("compterPairs", () => {
-  // à compléter
+  // à compléter // 
+  it("Retourne le nombre d'entiers pairs entre 1 et n inclus", () => {
+    expect(compterPairs(10)).toBe(5)
+  })
+  it("Retourne le nombre d'entiers pairs entre 1 et n inclus", () => {
+    expect(compterPairs(7)).toBe(3)
+  })
+  it("Retourne le nombre d'entiers pairs entre 1 et n inclus", () => {
+      expect(compterPairs(1)).toBe(0)
+  })
+  
 })
 
 // Pattern 3 : boucle + construction de tableau → .toEqual() sur un tableau.
@@ -57,7 +82,13 @@ describe("table", () => {
 // Même pattern que table — à toi.
 // Cas à couvrir : multiplesJusqua(3, 12) → [3, 6, 9, 12], multiplesJusqua(7, 20) → [7, 14].
 describe("multiplesJusqua", () => {
-  // à compléter
+  // à compléter // 
+  it("Retourne un tableau contenant tous les multiples de n inférieurs ou égaux à limite", () => {
+    expect(multiplesJusqua(3, 12)).toEqual([3, 6, 9, 12])
+  })
+    it("Retourne un tableau contenant tous les multiples de n inférieurs ou égaux à limite", () => {
+    expect(multiplesJusqua(7, 20)).toEqual([7, 14])
+  })
 })
 
 // [FACULTATIF] Même pattern que somme/produit — à toi.

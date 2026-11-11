@@ -8,7 +8,12 @@
  * @example compterJusqua(5) → affiche 1, 2, 3, 4, 5
  */
 export const compterJusqua = (n) => {
-  // à compléter
+  // à compléter // OK //
+  let compteur = 1
+  while(compteur <= 5) {
+    console.log(compteur)
+    compteur = compteur + 1
+  }
 }
 
 /**
@@ -18,7 +23,14 @@ export const compterJusqua = (n) => {
  * @example afficherPairs(8) → affiche 2, 4, 6, 8
  */
 export const afficherPairs = (n) => {
-  // à compléter
+  // à compléter // OK //
+  let compteur = 1
+  while (compteur <= n) {
+    if (compteur % 2 === 0) {
+      console.log(compteur)
+    }
+    compteur = compteur + 1  
+  }
 }
 
 /**
@@ -29,8 +41,15 @@ export const afficherPairs = (n) => {
  * @example somme(5) → 15  (1+2+3+4+5)
  */
 export const somme = (n) => {
-  // à compléter
-}
+  // à compléter // OK //
+  let compteur = 1
+  let somme = 0 
+  while (compteur <= n) {
+    somme = somme + compteur
+    compteur = compteur + 1
+  }
+  return somme
+}  
 
 /**
  * Retourne le produit de tous les entiers de 1 à n (factorielle).
@@ -41,7 +60,14 @@ export const somme = (n) => {
  * @example produit(0) → 1
  */
 export const produit = (n) => {
-  // à compléter
+  // à compléter // OK //
+  let compteur = 1
+  let produit = 1
+  while (compteur <= n) {
+    produit = produit * compteur
+    compteur = compteur + 1
+  }
+  return produit
 }
 
 /**
@@ -53,7 +79,16 @@ export const produit = (n) => {
  * @example compterPairs(7)  → 3
  */
 export const compterPairs = (n) => {
-  // à compléter
+  // à compléter // OK //
+  let compteur = 1
+  let nbPairs = 0
+  while (compteur <= n) {
+    if (compteur % 2 === 0) {
+        nbPairs = nbPairs + 1
+    }
+    compteur = compteur + 1
+  } 
+  return nbPairs
 }
 
 /**
@@ -65,7 +100,18 @@ export const compterPairs = (n) => {
  * @example table(0) → []
  */
 export const table = (n) => {
-  // à compléter
+  // à compléter // OK //
+  let compteur = 1
+  let tab = [] 
+  let nbMultiple = 0
+  while (nbMultiple < n) {
+    if (compteur % n === 0) {
+        tab.push(compteur)
+        nbMultiple = nbMultiple + 1 
+    }
+    compteur = compteur + 1
+  }
+  return tab
 }
 
 /**
@@ -78,7 +124,16 @@ export const table = (n) => {
  * @example multiplesJusqua(7, 20) → [7, 14]
  */
 export const multiplesJusqua = (n, limite) => {
-  // à compléter
+  // à compléter // OK //
+  let compteur = n
+  let i = 0
+  let tab = []
+  while (compteur <= limite) {
+    tab[i] = compteur
+    i = i + 1
+    compteur = compteur + n
+  }
+  return tab
 }
 
 /**
