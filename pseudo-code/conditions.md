@@ -34,7 +34,7 @@ START
 FIN
 ------
 
-## max (a, b)
+## max(a, b)
 
 ----- text--
     VARABLE
@@ -84,6 +84,36 @@ START
 
             RETOURNE "insuffisant"    
         
+        
+    FIN FONCTION        
+FIN
+------
+
+## fizzbuzz(n)
+
+----- text--
+    VARABLE
+    n : ENTIER
+
+
+INIT
+
+START
+    DEBUT FONCTION fizzbuzz(n) :
+        
+        SI n % 3 = 0 && n % 5 = 0 ALORS
+            RETOURNE "fizzbuzz"
+
+        SINON SI n % 3 = 0 ALORS
+            RETOURNE "fizz"
+        
+        SINON SI n % 5 = 0 ALORS
+            RETOURNE "Buzz"
+        SINON 
+            RETOURNE convertir en texte(n)
+        FIN SI 
+
+        FIN    
         
     FIN FONCTION        
 FIN

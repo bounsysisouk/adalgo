@@ -18,7 +18,7 @@ describe("estPositif", () => {
 // Même pattern qu'estPositif — écris les 3 tests toi-même.
 // Cas à couvrir : un nombre pair, un nombre impair, zéro.
 describe("estPair", () => {
-  // à compléter
+  // à compléter // OK //
   it("retourne vrai pour un nombre paire", () => {
     expect(estPair(4)).toBe(true)
   })
@@ -44,7 +44,7 @@ describe("max", () => {
 // Même pattern que max — écris les tests pour chaque mention.
 // Cas à couvrir : une note dans chaque tranche, et la valeur frontière 16.
 describe("mention", () => {
-  // à compléter
+  // à compléter // OK //
   it ("retourne 'Très bien' quand la note >= 16", () => {
     expect(mention(17)).toBe("Très bien")
   })
@@ -60,5 +60,17 @@ describe("mention", () => {
 // [FACULTATIF] Même pattern — à toi.
 // Cas à couvrir : multiple de 3, multiple de 5, multiple des deux, autre.
 describe("fizzbuzz", () => {
-  // à compléter
+  // à compléter // OK //
+  it("retourne 'Fizz' quand le nombre est divisible par 3", () => {
+    expect(fizzbuzz(6)).toBe("Fizz")
+  })
+  it("retourne 'buzz' quand le nombre est divisible par 5", () => {
+    expect(fizzbuzz(25)).toBe("Buzz")
+  })
+  it("retourne 'fizzbuzz' quand le nombre est divisible par 3 et par 5", () => {
+    expect(fizzbuzz(15)).toBe("Fizzbuzz")
+  })
+  it("retourne le nombre en string si ni divisible par 3 ni par 5", () => {
+    expect(fizzbuzz(42)).toBe("Fizz")
+  })
 })
