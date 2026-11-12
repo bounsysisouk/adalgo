@@ -46,7 +46,7 @@ describe("moyenne", () => {
 // Même pattern — à toi.
 // Cas à couvrir : valeur présente, valeur absente, tableau vide.
 describe("contient", () => {
-  // à compléter
+  // à compléter // OK //
   it("Retourne true si la valeur est présente dans le tableau, sinon false", () => {
     expect(contient([1, 2, 3], 2)).toBe(true)
   })
@@ -58,7 +58,13 @@ describe("contient", () => {
 // Même pattern — à toi.
 // Cas à couvrir : plusieurs occurrences, valeur absente (retourne 0).
 describe("compter", () => {
-  // à compléter
+  // à compléter // 
+  it("Retourne le nombre de fois que la valeur apparaît dans le tableau", () => {
+    expect(compter([1, 2, ,2, 3, 2], 2)).toBe(3)
+  })
+  it("retourne 0 pour un tableau vide", () => {
+    expect(compter([])).toBe(0)
+  })
 })
 
 // [FACULTATIF] Nouveau cas : vérifier que le tableau original n'est pas modifié.

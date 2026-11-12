@@ -67,7 +67,7 @@ export const moyenne = (tableau) => {
  * @example contient([1, 2, 3], 2) → true / contient([1, 2, 3], 5) → false
  */
 export const contient = (tableau, valeur) => {
-  // à compléter // 
+  // à compléter // OK //
   for (let i = 0; i < tableau.length; i++) {
     if (tableau[i] === valeur) {
       return true
@@ -84,7 +84,18 @@ export const contient = (tableau, valeur) => {
  * @example compter([1, 2, 2, 3, 2], 2) → 3
  */
 export const compter = (tableau, valeur) => {
-  // à compléter
+  // à compléter // 
+  let nbVal = 0
+  if (tableau.length === 0) {
+    return 0
+  }
+  for (let i = 0; i < tableau.length; i++) {
+    if (tableau[i] === valeur) {
+        nbVal = nbVal + 1
+        
+      }
+    } 
+  return nbVal
 }
 
 /**

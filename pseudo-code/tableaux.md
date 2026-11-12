@@ -138,24 +138,28 @@ FIN
 VARIABLE
     tab : ENTIER[]
     val : ENTIER
-   
+    nbVal: ENTIER
    
 INIT
     tab[0] <- 1
     tab[1] <- 2
-    tab[2] <- 3
+    tab[2] <- 2
+    tab[3] <- 3
+    tab[4] <- 2
 START
-    DEBUT FONCTION contient(tab, val) :
+    DEBUT FONCTION compter(tab, val) :
    
         POUR i = 0 à longueur(tab) - 1 
 
             SI tab[i] = val ALORS
-                RETOURNER true
+                nbVal <- val
+                i = i + 1
+                
             FIN SI
 
         FIN POUR 
 
-        RETOURNER False
+        RETOURNER nbVal
 
         FIN   
         
