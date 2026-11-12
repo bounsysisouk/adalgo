@@ -1,6 +1,6 @@
 # Tableaux
 
-## maximum (tableaux)
+## maximum(tableaux)
 
 ----- text--
     VARIABLE
@@ -34,7 +34,7 @@ START
 FIN
 ------
 
-## minimum (tableaux)
+## minimum(tableaux)
 
 ----- text--
     VARIABLE
@@ -68,7 +68,7 @@ START
 FIN
 ------
 
-## moyenne (tableaux)
+## moyenne(tableaux)
 
 ----- text--
 VARIABLE
@@ -94,6 +94,68 @@ START
         moyenne = somme / nbVal
 
         RETOURNER moyenne 
+
+        FIN   
+        
+    FIN FONCTION        
+FIN
+------
+
+## contient(tableau, valeur)
+
+----- text--
+VARIABLE
+    tab : ENTIER[]
+    val : ENTIER
+    cible : ENTIER
+   
+INIT
+    tab[0] <- 1
+    tab[1] <- 2
+    tab[2] <- 3
+START
+    DEBUT FONCTION contient(tab, val) :
+   
+        POUR i = 0 à longueur(tab) - 1 
+
+            SI tab[i] = val ALORS
+                REtOURNER true
+            FIN SI
+
+        FIN POUR 
+
+        RETOURNER False
+
+        FIN   
+        
+    FIN FONCTION        
+FIN
+------
+
+## compter(tableau, valeur)
+
+----- text--
+VARIABLE
+    tab : ENTIER[]
+    val : ENTIER
+   
+   
+INIT
+    tab[0] <- 1
+    tab[1] <- 2
+    tab[2] <- 3
+START
+    DEBUT FONCTION contient(tab, val) :
+   
+        POUR i = 0 à longueur(tab) - 1 
+
+            SI tab[i] = val ALORS
+                RETOURNER true
+            FIN SI
+
+        FIN POUR 
+
+        RETOURNER False
 
         FIN   
         

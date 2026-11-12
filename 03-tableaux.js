@@ -26,7 +26,7 @@ export const maximum = (tableau) => {
  * @example minimum([3, 7, 2, 9, 1]) → 1
  */
 export const minimum = (tableau) => {
-  // à compléter
+  // à compléter // OK //
   let min = tableau[0]
   tableau.forEach((n) => {
     if (n < min) {
@@ -44,7 +44,7 @@ export const minimum = (tableau) => {
  * @example moyenne([2, 4, 6]) → 4 / moyenne([]) → null
  */
 export const moyenne = (tableau) => {
-  // à compléter
+  // à compléter // OK //
   let somme = 0
   let nbVal = 0
   if (tableau.length === 0) {
@@ -67,7 +67,13 @@ export const moyenne = (tableau) => {
  * @example contient([1, 2, 3], 2) → true / contient([1, 2, 3], 5) → false
  */
 export const contient = (tableau, valeur) => {
-  // à compléter
+  // à compléter // 
+  for (let i = 0; i < tableau.length; i++) {
+    if (tableau[i] === valeur) {
+      return true
+    }   
+  }
+  return false 
 }
 
 /**
