@@ -9,7 +9,18 @@
  * @example inverserChaine("bonjour") → "ruojnob"
  */
 export const inverserChaine = (chaine) => {
-  // à compléter
+  // à compléter // OK //
+  if (chaine === "") {
+  return null;
+  }
+  let longueur = chaine.length;
+  let i = longueur - 1;
+  let motInverse = ""
+  while(i >= 0) {
+    motInverse = motInverse + chaine[i];
+    i = i - 1;
+  }
+   return motInverse
 }
 
 /**
@@ -20,6 +31,17 @@ export const inverserChaine = (chaine) => {
  */
 export const estPalindrome = (chaine) => {
   // à compléter
+  let longueur = chaine.length;
+  let i = 0;
+  let j = longueur - 1;
+  while(i < j) {
+    if (chaine[i] !== chaine[j]) {
+      return false;
+    }
+      i = i + 1;  
+      j = j - 1; 
+  }
+  return true
 }
 
 /**
