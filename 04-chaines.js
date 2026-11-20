@@ -10,17 +10,17 @@
  */
 export const inverserChaine = (chaine) => {
   // à compléter // OK //
-  if (chaine === "") {
-  return null;
-  }
+    if (chaine === "") {
+      return null;
+    }
   let longueur = chaine.length;
   let i = longueur - 1;
   let motInverse = ""
-  while(i >= 0) {
+    while (i >= 0) {
     motInverse = motInverse + chaine[i];
     i = i - 1;
-  }
-   return motInverse
+    }
+  return motInverse
 }
 
 /**
@@ -30,19 +30,19 @@ export const inverserChaine = (chaine) => {
  * @example estPalindrome("kayak") → true / estPalindrome("bonjour") → false
  */
 export const estPalindrome = (chaine) => {
-  // à compléter
-  let longueur = chaine.length;
-  let i = 0;
-  let j = longueur - 1;
-  while(i < j) {
-    if (chaine[i] !== chaine[j]) {
-      return false;
+  // à compléter // OK //
+    let longueur = chaine.length;
+    let i = 0;
+    let j = longueur - 1;
+    while (i < j) {
+      if (chaine[i] !== chaine[j]) {
+        return false;
+      }
+    i = i + 1;
+    j = j - 1;
     }
-      i = i + 1;  
-      j = j - 1; 
-  }
   return true
-}
+};
 
 /**
  * Retourne le nombre de voyelles dans la chaîne (a, e, i, o, u, y).
@@ -51,8 +51,19 @@ export const estPalindrome = (chaine) => {
  * @example compterVoyelles("bonjour") → 3
  */
 export const compterVoyelles = (chaine) => {
-  // à compléter
-}
+  // à compléter // OK //
+  let longueur = chaine.length;
+  let compterVoyelles = 0;
+  let i = 0;
+  let voyelles = "aeiouy";
+    while (i < longueur) {
+      if (voyelles.includes(chaine[i])) {
+        compterVoyelles = compterVoyelles + 1;
+      }
+    i = i + 1;
+    }
+  return compterVoyelles;
+};
 
 /**
  * [FACULTATIF]

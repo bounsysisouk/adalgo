@@ -61,3 +61,39 @@ START
     FIN FONCTION
 
 --------- FIN---------
+
+## compterVoyelles(chaine)
+
+----- text--
+VARIABLE
+chaine : CHAINE
+longueur : ENTIER
+i : ENTIER
+compterVoyelles: ENTIER
+
+
+INIT
+    AFFICHER "entrer une chaine de caractère"
+    LIRE chaine
+START
+    DEBUT FONCTION compterVoyelles(chaine)
+    longueur <- TAILLE(chaine)
+    compterVoyelles <- 0
+    i <- 0
+   
+
+        TANT QUE i < longueur FAIRE
+
+            SI chaine[i] = "a" OU chaine[i] = "e" OU chaine[i] = "i" OU chaine[i] = "o" OU chaine[i] = "u" OU chaine[i] = "y" ALORS
+                compterVoyelles <- compterVoyelles + 1
+            FIN SI
+
+        i <- i + 1
+        
+        FIN TANT QUE
+            RETOURNE compterVoyelles
+
+    FIN FONCTION
+
+--------- FIN---------
+
