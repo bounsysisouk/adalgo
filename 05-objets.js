@@ -9,7 +9,8 @@
  * @example fullName({ prenom: "Ada", nom: "Lovelace" }) → "Ada Lovelace"
  */
 export const fullName = (personne) => {
-  // à compléter
+  // à compléter// ok //
+  return `${personne.prenom} ${personne.nom}`.trim()
 }
 
 /**
@@ -21,7 +22,13 @@ export const fullName = (personne) => {
  *          → [{ nom: "Ada", age: 28 }]
  */
 export const filtrerParAge = (personnes, ageMin) => {
-  // à compléter
+  // à compléter // ok // 
+  const resultat = [];
+  personnes.forEach(p => {
+    if (p.age >= ageMin)
+      resultat.push(p)
+  });
+  return resultat;
 }
 
 /**
@@ -32,7 +39,12 @@ export const filtrerParAge = (personnes, ageMin) => {
  *          → [{ nom: "Hopper" }, { nom: "Lovelace" }, { nom: "Turing" }]
  */
 export const trierParNom = (personnes) => {
-  // à compléter
+  // à compléter // OK // 
+  if (personnes.some((personne) => personne.nom === "")) {
+    return []
+  }
+  return [... personnes].sort((a, b) => a.nom.localeCompare(b.nom))
+  
 }
 
 /**
