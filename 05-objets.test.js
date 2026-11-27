@@ -34,6 +34,9 @@ describe("trierParNom", () => {
     const original = [{ nom: "Turing" }, { nom:"Ada" }]
     expect(original[0].nom).toBe("Turing")
   });
+  it("Retourne le tableau vide si au moins un chanp est vide", () => {
+    expect(trierParNom([{nom:""}])).toEqual([])
+  });
 })
 
 // [FACULTATIF]
